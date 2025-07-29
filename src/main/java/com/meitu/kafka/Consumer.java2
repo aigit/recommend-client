@@ -1,0 +1,15 @@
+package com.meitu.kafka;
+
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class Consumer {
+
+    @KafkaListener(topics = "answer",groupId = "group-1")
+    public void consume(String message) {
+        System.out.println("收到消息===>"+message);
+    }
+
+}
