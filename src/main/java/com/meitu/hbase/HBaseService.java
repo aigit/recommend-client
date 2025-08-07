@@ -13,7 +13,7 @@ public class HBaseService {
     private Connection hbaseConnection;
 
     public void putData(String tableName,String rowKey,String columnFamily,String column,String value) throws Exception {
-        try(Table table = hbaseConnection.getTable(TableName.valueOf(tableName)){
+        try(Table table = hbaseConnection.getTable(TableName.valueOf(tableName))){
             Put put = new Put(rowKey.getBytes());
             put.addColumn(columnFamily.getBytes(), column.getBytes(), value.getBytes());
             table.put(put);
