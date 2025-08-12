@@ -54,7 +54,7 @@ public class HBaseService {
         }
     }
 
-    public void increament(String tableName,String rowKey,String columnFamily,String column,String value) throws Exception {
+    public void increament(String tableName,String rowKey,String columnFamily,String column) throws Exception {
         try(Table table = hbaseConnection.getTable(TableName.valueOf(tableName))){
             String val = getData(tableName, rowKey, columnFamily, column);
             int res = 1;

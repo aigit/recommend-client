@@ -1,13 +1,12 @@
 package com.meitu.domain;
 
 /**
- * @author XINZE
+ * @author Firstname Lastname
  */
 public class LogEntity {
 
     private int userId;
     private int productId;
-    private Long time;
     private String action;
 
     public int getUserId() {
@@ -24,14 +23,6 @@ public class LogEntity {
 
     public void setProductId(int productId) {
         this.productId = productId;
-    }
-
-    public Long getTime() {
-        return time;
-    }
-
-    public void setTime(Long time) {
-        this.time = time;
     }
 
     public String getAction() {
