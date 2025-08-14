@@ -2,6 +2,7 @@ package com.meitu.web;
 
 import cn.hutool.json.JSONUtil;
 import com.meitu.domain.LogEntity;
+import com.meitu.service.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

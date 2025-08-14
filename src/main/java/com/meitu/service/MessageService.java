@@ -1,4 +1,4 @@
-package com.meitu.web;
+package com.meitu.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
