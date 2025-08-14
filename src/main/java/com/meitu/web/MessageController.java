@@ -1,5 +1,7 @@
 package com.meitu.web;
 
+import cn.hutool.json.JSONUtil;
+import com.meitu.domain.LogEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,8 +14,8 @@ public class MessageController {
 
 
     @PostMapping("/send")
-    public String send(@RequestParam("message") String message,@RequestParam("topic") String topic) {
-        messageService.sendMessage(topic, message);
+    public String send(@RequestBody LogEntity logEntity, @RequestParam("topic") String topic) {
+        messageService.sendMessage(topic, JSONUtil.toJsonStr(logEntity));
         return "success";
     }
 

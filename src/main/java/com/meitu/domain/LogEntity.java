@@ -5,23 +5,23 @@ package com.meitu.domain;
  */
 public class LogEntity {
 
-    private int userId;
-    private int productId;
+    private String userId;
+    private String productId;
     private String action;
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
-    public int getProductId() {
+    public String getProductId() {
         return productId;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 
