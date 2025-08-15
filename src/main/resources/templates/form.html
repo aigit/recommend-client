@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>商品明细</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h1>商品明细</h1>
+    <form th:action="@{/submit}" th:object="${logEntity}" method="post">
+        <div class="mb-3">
+            <label class="form-label">用户</label>
+            <input type="text" th:field="*{userId}" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">商品</label>
+            <input type="text" th:field="*{productId}" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">提交线索</button>
+    </form>
+</div>
+</body>
+</html>

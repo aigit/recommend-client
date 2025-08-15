@@ -5,6 +5,10 @@ spring:
     value-serializer: org.springframework.kafka.support.serializer.StringSerializer
   producer:
     retries: 3
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
 
 kafka:
   bootstrap-servers: localhost:9092

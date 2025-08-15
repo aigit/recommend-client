@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/product/near")
 public class ProductNearController {
 
-    @Autowired
-    private HBaseService hBaseService;
-
     /**
      * 计算
      * @return
